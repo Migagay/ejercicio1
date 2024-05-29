@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Formulario Préstamo</h1>
+        <form name="formulario" id="formulario" onsubmit="datos(this)">
+            <div class="field">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div class="field">
+                <label for="tipo_prestamo" class="form-label">Tipo Préstamo</label>
+                <select id="tipo_prestamo" name="tipo_prestamo" class="form-select" required>
+                    <option value="Hipotecario">Hipotecario</option>
+                    <option value="Automotriz">Automotriz</option>
+                    <option value="Consumo">Consumo</option>
+                </select>
+            </div>
+            <div class="actions">
+                <input type="submit" value="Solicitar">
+                <input type="button" onclick="reporte()" value="Resumen">
+                <button onclick="resetearRepositorio()">Resetear Repositorio</button>
+                <br>
+                <a href="resumen.html">Ver Resumen general</a>
+            </div>
+        </form>
+    </main>
+    <script src="app.js"></script>
+    <script>
+        // Prevent the default form submission behavior
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
