@@ -30,6 +30,6 @@ function reporte() {
     alert(mensaje);
 }
 // con la siguiente parte guardamos para ser llamado en la pagina resumen
-document.getElementById("hipotecarios").textContent = prestamos.Hipotecario.length;
-document.getElementById("automotriz").textContent = prestamos.Automotriz.length;
-document.getElementById("consumo").textContent = prestamos.Consumo.length;
+document.getElementById("Hipotecarios").textContent = prestamos.Hipotecario.length;
+document.getElementById("Automotriz").textContent = prestamos.Automotriz.length;
+document.getElementById("Consumo").textContent = prestamos.Consumo.length;
