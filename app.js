@@ -16,7 +16,7 @@ function resetearRepositorio() {
     // Eliminar los datos del almacenamiento
     localStorage.removeItem("prestamos");
 
-    // Restablecer la variable productos a su estado inicial
+    // Restablecer la variable productos a su estado de inicio
     prestamos = {  Hipotecario: [], Automotriz: [], Consumo: [] };
 
     console.log("Repositorio reseteado");
