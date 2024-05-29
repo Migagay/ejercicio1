@@ -13,7 +13,7 @@ function datos(formulario) {
 }
 
 function resetearRepositorio() {
-    // Eliminar los datos del almacenamiento local
+    // Eliminar los datos del almacenamiento
     localStorage.removeItem("prestamos");
 
     // Restablecer la variable productos a su estado inicial
